@@ -1,8 +1,12 @@
 //Retrived from : https://en.wikipedia.org/wiki/List_of_chemical_elements
-let periodicTable = {
-  "element" : []
-};
-periodicTable.element.push({
+
+if(!periodicTable){
+    var periodicTable = [];
+}else if (typeof periodicTable != 'array') {
+    throw Error('Error with the namespace')
+}
+
+periodicTable.push({
     "Z":1,
     "Symbol":"H",
     "Element":"Hydrogen",
@@ -18,7 +22,7 @@ periodicTable.element.push({
     "C":"14.304",
     "X":"2.20"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":2,
     "Symbol":"He",
     "Element":"Helium",
@@ -34,7 +38,7 @@ periodicTable.element.push({
     "C":"5.193",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":3,
     "Symbol":"Li",
     "Element":"Lithium",
@@ -50,7 +54,7 @@ periodicTable.element.push({
     "C":"3.582",
     "X":"0.98"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":4,
     "Symbol":"Be",
     "Element":"Beryllium",
@@ -66,7 +70,7 @@ periodicTable.element.push({
     "C":"1.825",
     "X":"1.57"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":5,
     "Symbol":"B",
     "Element":"Boron",
@@ -82,7 +86,7 @@ periodicTable.element.push({
     "C":"1.026",
     "X":"2.04"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":6,
     "Symbol":"C",
     "Element":"Carbon",
@@ -98,7 +102,7 @@ periodicTable.element.push({
     "C":"0.709",
     "X":"2.55"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":7,
     "Symbol":"N",
     "Element":"Nitrogen",
@@ -114,7 +118,7 @@ periodicTable.element.push({
     "C":"1.04",
     "X":"3.04"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":8,
     "Symbol":"O",
     "Element":"Oxygen",
@@ -130,7 +134,7 @@ periodicTable.element.push({
     "C":"0.918",
     "X":"3.44"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":9,
     "Symbol":"F",
     "Element":"Fluorine",
@@ -146,7 +150,7 @@ periodicTable.element.push({
     "C":"0.824",
     "X":"3.98"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":10,
     "Symbol":"Ne",
     "Element":"Neon",
@@ -162,7 +166,7 @@ periodicTable.element.push({
     "C":"1.03",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":11,
     "Symbol":"Na",
     "Element":"Sodium",
@@ -178,7 +182,7 @@ periodicTable.element.push({
     "C":"1.228",
     "X":"0.93"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":12,
     "Symbol":"Mg",
     "Element":"Magnesium",
@@ -194,7 +198,7 @@ periodicTable.element.push({
     "C":"1.023",
     "X":"1.31"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":13,
     "Symbol":"Al",
     "Element":"Aluminium",
@@ -210,7 +214,7 @@ periodicTable.element.push({
     "C":"0.897",
     "X":"1.61"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":14,
     "Symbol":"Si",
     "Element":"Silicon",
@@ -226,7 +230,7 @@ periodicTable.element.push({
     "C":"0.705",
     "X":"1.9"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":15,
     "Symbol":"P",
     "Element":"Phosphorus",
@@ -242,7 +246,7 @@ periodicTable.element.push({
     "C":"0.769",
     "X":"2.19"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":16,
     "Symbol":"S",
     "Element":"Sulfur",
@@ -258,7 +262,7 @@ periodicTable.element.push({
     "C":"0.71",
     "X":"2.58"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":17,
     "Symbol":"Cl",
     "Element":"Chlorine",
@@ -274,7 +278,7 @@ periodicTable.element.push({
     "C":"0.479",
     "X":"3.16"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":18,
     "Symbol":"Ar",
     "Element":"Argon",
@@ -290,7 +294,7 @@ periodicTable.element.push({
     "C":"0.52",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":19,
     "Symbol":"K",
     "Element":"Potassium",
@@ -306,7 +310,7 @@ periodicTable.element.push({
     "C":"0.757",
     "X":"0.82"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":20,
     "Symbol":"Ca",
     "Element":"Calcium",
@@ -322,7 +326,7 @@ periodicTable.element.push({
     "C":"0.647",
     "X":"1"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":21,
     "Symbol":"Sc",
     "Element":"Scandium",
@@ -338,7 +342,7 @@ periodicTable.element.push({
     "C":"0.568",
     "X":"1.36"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":22,
     "Symbol":"Ti",
     "Element":"Titanium",
@@ -354,7 +358,7 @@ periodicTable.element.push({
     "C":"0.523",
     "X":"1.54"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":23,
     "Symbol":"V",
     "Element":"Vanadium",
@@ -370,7 +374,7 @@ periodicTable.element.push({
     "C":"0.489",
     "X":"1.63"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":24,
     "Symbol":"Cr",
     "Element":"Chromium",
@@ -386,7 +390,7 @@ periodicTable.element.push({
     "C":"0.449",
     "X":"1.66"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":25,
     "Symbol":"Mn",
     "Element":"Manganese",
@@ -402,7 +406,7 @@ periodicTable.element.push({
     "C":"0.479",
     "X":"1.55"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":26,
     "Symbol":"Fe",
     "Element":"Iron",
@@ -418,7 +422,7 @@ periodicTable.element.push({
     "C":"0.449",
     "X":"1.83"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":27,
     "Symbol":"Co",
     "Element":"Cobalt",
@@ -434,7 +438,7 @@ periodicTable.element.push({
     "C":"0.421",
     "X":"1.88"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":28,
     "Symbol":"Ni",
     "Element":"Nickel",
@@ -450,7 +454,7 @@ periodicTable.element.push({
     "C":"0.444",
     "X":"1.91"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":29,
     "Symbol":"Cu",
     "Element":"Copper",
@@ -466,7 +470,7 @@ periodicTable.element.push({
     "C":"0.385",
     "X":"1.9"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":30,
     "Symbol":"Zn",
     "Element":"Zinc",
@@ -482,7 +486,7 @@ periodicTable.element.push({
     "C":"0.388",
     "X":"1.65"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":31,
     "Symbol":"Ga",
     "Element":"Gallium",
@@ -498,7 +502,7 @@ periodicTable.element.push({
     "C":"0.371",
     "X":"1.81"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":32,
     "Symbol":"Ge",
     "Element":"Germanium",
@@ -514,7 +518,7 @@ periodicTable.element.push({
     "C":"0.32",
     "X":"2.01"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":33,
     "Symbol":"As",
     "Element":"Arsenic",
@@ -530,7 +534,7 @@ periodicTable.element.push({
     "C":"0.329",
     "X":"2.18"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":34,
     "Symbol":"Se",
     "Element":"Selenium",
@@ -546,7 +550,7 @@ periodicTable.element.push({
     "C":"0.321",
     "X":"2.55"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":35,
     "Symbol":"Br",
     "Element":"Bromine",
@@ -562,7 +566,7 @@ periodicTable.element.push({
     "C":"0.474",
     "X":"2.96"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":36,
     "Symbol":"Kr",
     "Element":"Krypton",
@@ -578,7 +582,7 @@ periodicTable.element.push({
     "C":"0.248",
     "X":"3"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":37,
     "Symbol":"Rb",
     "Element":"Rubidium",
@@ -594,7 +598,7 @@ periodicTable.element.push({
     "C":"0.363",
     "X":"0.82"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":38,
     "Symbol":"Sr",
     "Element":"Strontium",
@@ -610,7 +614,7 @@ periodicTable.element.push({
     "C":"0.301",
     "X":"0.95"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":39,
     "Symbol":"Y",
     "Element":"Yttrium",
@@ -626,7 +630,7 @@ periodicTable.element.push({
     "C":"0.298",
     "X":"1.22"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":40,
     "Symbol":"Zr",
     "Element":"Zirconium",
@@ -642,7 +646,7 @@ periodicTable.element.push({
     "C":"0.278",
     "X":"1.33"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":41,
     "Symbol":"Nb",
     "Element":"Niobium",
@@ -658,7 +662,7 @@ periodicTable.element.push({
     "C":"0.265",
     "X":"1.6"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":42,
     "Symbol":"Mo",
     "Element":"Molybdenum",
@@ -674,7 +678,7 @@ periodicTable.element.push({
     "C":"0.251",
     "X":"2.16"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":43,
     "Symbol":"Tc",
     "Element":"Technetium",
@@ -690,7 +694,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"1.9"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":44,
     "Symbol":"Ru",
     "Element":"Ruthenium",
@@ -706,7 +710,7 @@ periodicTable.element.push({
     "C":"0.238",
     "X":"2.2"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":45,
     "Symbol":"Rh",
     "Element":"Rhodium",
@@ -722,7 +726,7 @@ periodicTable.element.push({
     "C":"0.243",
     "X":"2.28"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":46,
     "Symbol":"Pd",
     "Element":"Palladium",
@@ -738,7 +742,7 @@ periodicTable.element.push({
     "C":"0.244",
     "X":"2.2"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":47,
     "Symbol":"Ag",
     "Element":"Silver",
@@ -754,7 +758,7 @@ periodicTable.element.push({
     "C":"0.235",
     "X":"1.93"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":48,
     "Symbol":"Cd",
     "Element":"Cadmium",
@@ -770,7 +774,7 @@ periodicTable.element.push({
     "C":"0.232",
     "X":"1.69"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":49,
     "Symbol":"In",
     "Element":"Indium",
@@ -786,7 +790,7 @@ periodicTable.element.push({
     "C":"0.233",
     "X":"1.78"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":50,
     "Symbol":"Sn",
     "Element":"Tin",
@@ -802,7 +806,7 @@ periodicTable.element.push({
     "C":"0.228",
     "X":"1.96"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":51,
     "Symbol":"Sb",
     "Element":"Antimony",
@@ -818,7 +822,7 @@ periodicTable.element.push({
     "C":"0.207",
     "X":"2.05"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":52,
     "Symbol":"Te",
     "Element":"Tellurium",
@@ -834,7 +838,7 @@ periodicTable.element.push({
     "C":"0.202",
     "X":"2.1"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":53,
     "Symbol":"I",
     "Element":"Iodine",
@@ -850,7 +854,7 @@ periodicTable.element.push({
     "C":"0.214",
     "X":"2.66"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":54,
     "Symbol":"Xe",
     "Element":"Xenon",
@@ -866,7 +870,7 @@ periodicTable.element.push({
     "C":"0.158",
     "X":"2.6"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":55,
     "Symbol":"Cs",
     "Element":"Caesium",
@@ -882,7 +886,7 @@ periodicTable.element.push({
     "C":"0.242",
     "X":"0.79"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":56,
     "Symbol":"Ba",
     "Element":"Barium",
@@ -898,7 +902,7 @@ periodicTable.element.push({
     "C":"0.204",
     "X":"0.89"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":57,
     "Symbol":"La",
     "Element":"Lanthanum",
@@ -914,12 +918,12 @@ periodicTable.element.push({
     "C":"0.195",
     "X":"1.1"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":58,
     "Symbol":"Ce",
     "Element":"Cerium",
     "Origin of name":"the then recently discovered asteroid Ceres, considered a planet at the time",
-    "Group":4,
+    "Group":"",
     "Period":6,
     "Atomic weight":"140.1161",
     "Mass number":140,
@@ -930,12 +934,12 @@ periodicTable.element.push({
     "C":"0.192",
     "X":"1.12"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":59,
     "Symbol":"Pr",
     "Element":"Praseodymium",
     "Origin of name":"the Greek praseios didymos meaning 'green twin'",
-    "Group": 4,
+    "Group":"",
     "Period":6,
     "Atomic weight":"140.907662",
     "Mass number":141,
@@ -946,12 +950,12 @@ periodicTable.element.push({
     "C":"0.193",
     "X":"1.13"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":60,
     "Symbol":"Nd",
     "Element":"Neodymium",
     "Origin of name":"the Greek neos didymos meaning 'new twin'",
-    "Group":4,
+    "Group":"",
     "Period":6,
     "Atomic weight":"144.2423",
     "Mass number":144,
@@ -962,12 +966,12 @@ periodicTable.element.push({
     "C":"0.19",
     "X":"1.14"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":61,
     "Symbol":"Pm",
     "Element":"Promethium",
     "Origin of name":"Prometheus of Greek mythology who stole fire from the Gods and gave it to humans",
-    "Group":4,
+    "Group":"",
     "Period":6,
     "Atomic weight":"145",
     "Mass number":145,
@@ -978,12 +982,12 @@ periodicTable.element.push({
     "C":"–",
     "X":"1.13"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":62,
     "Symbol":"Sm",
     "Element":"Samarium",
     "Origin of name":"Samarskite, the name of the mineral from which it was first isolated",
-    "Group":3,
+    "Group":"",
     "Period":6,
     "Atomic weight":"150.362",
     "Mass number":150,
@@ -994,12 +998,12 @@ periodicTable.element.push({
     "C":"0.197",
     "X":"1.17"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":63,
     "Symbol":"Eu",
     "Element":"Europium",
     "Origin of name":"Europe",
-    "Group":3,
+    "Group":"",
     "Period":6,
     "Atomic weight":"151.9641",
     "Mass number":152,
@@ -1010,12 +1014,12 @@ periodicTable.element.push({
     "C":"0.182",
     "X":"1.2"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":64,
     "Symbol":"Gd",
     "Element":"Gadolinium",
     "Origin of name":"Johan Gadolin, chemist, physicist and mineralogist",
-    "Group":4,
+    "Group":"",
     "Period":6,
     "Atomic weight":"157.253",
     "Mass number":157,
@@ -1026,12 +1030,12 @@ periodicTable.element.push({
     "C":"0.236",
     "X":"1.2"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":65,
     "Symbol":"Tb",
     "Element":"Terbium",
     "Origin of name":"Ytterby, Sweden",
-    "Group":5,
+    "Group":"",
     "Period":6,
     "Atomic weight":"158.925352",
     "Mass number":159,
@@ -1042,12 +1046,12 @@ periodicTable.element.push({
     "C":"0.182",
     "X":"1.2"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":66,
     "Symbol":"Dy",
     "Element":"Dysprosium",
     "Origin of name":"the Greek dysprositos, 'hard to get'",
-    "Group":4,
+    "Group":"",
     "Period":6,
     "Atomic weight":"162.5001",
     "Mass number":163,
@@ -1058,12 +1062,12 @@ periodicTable.element.push({
     "C":"0.17",
     "X":"1.22"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":67,
     "Symbol":"Ho",
     "Element":"Holmium",
     "Origin of name":"Holmia, the New Latin name for Stockholm",
-    "Group":4,
+    "Group":"",
     "Period":6,
     "Atomic weight":"164.930332",
     "Mass number":165,
@@ -1074,12 +1078,12 @@ periodicTable.element.push({
     "C":"0.165",
     "X":"1.23"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":68,
     "Symbol":"Er",
     "Element":"Erbium",
     "Origin of name":"Ytterby, Sweden",
-    "Group":3,
+    "Group":"",
     "Period":6,
     "Atomic weight":"167.2593",
     "Mass number":167,
@@ -1090,12 +1094,12 @@ periodicTable.element.push({
     "C":"0.168",
     "X":"1.24"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":69,
     "Symbol":"Tm",
     "Element":"Thulium",
     "Origin of name":"Thule, the ancient name for Scandinavia",
-    "Group":4,
+    "Group":"",
     "Period":6,
     "Atomic weight":"168.934222",
     "Mass number":169,
@@ -1106,12 +1110,12 @@ periodicTable.element.push({
     "C":"0.16",
     "X":"1.25"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":70,
     "Symbol":"Yb",
     "Element":"Ytterbium",
     "Origin of name":"Ytterby, Sweden",
-    "Group":3,
+    "Group":"",
     "Period":6,
     "Atomic weight":"173.04510",
     "Mass number":173,
@@ -1122,12 +1126,12 @@ periodicTable.element.push({
     "C":"0.155",
     "X":"1.1"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":71,
     "Symbol":"Lu",
     "Element":"Lutetium",
     "Origin of name":"Lutetia, the Latin name for Paris",
-    "Group":3,
+    "Group":"",
     "Period":6,
     "Atomic weight":"174.96681",
     "Mass number":175,
@@ -1138,7 +1142,7 @@ periodicTable.element.push({
     "C":"0.154",
     "X":"1.27"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":72,
     "Symbol":"Hf",
     "Element":"Hafnium",
@@ -1154,7 +1158,7 @@ periodicTable.element.push({
     "C":"0.144",
     "X":"1.3"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":73,
     "Symbol":"Ta",
     "Element":"Tantalum",
@@ -1170,7 +1174,7 @@ periodicTable.element.push({
     "C":"0.14",
     "X":"1.5"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":74,
     "Symbol":"W",
     "Element":"Tungsten",
@@ -1186,7 +1190,7 @@ periodicTable.element.push({
     "C":"0.132",
     "X":"2.36"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":75,
     "Symbol":"Re",
     "Element":"Rhenium",
@@ -1202,7 +1206,7 @@ periodicTable.element.push({
     "C":"0.137",
     "X":"1.9"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":76,
     "Symbol":"Os",
     "Element":"Osmium",
@@ -1218,7 +1222,7 @@ periodicTable.element.push({
     "C":"0.13",
     "X":"2.2"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":77,
     "Symbol":"Ir",
     "Element":"Iridium",
@@ -1234,7 +1238,7 @@ periodicTable.element.push({
     "C":"0.131",
     "X":"2.2"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":78,
     "Symbol":"Pt",
     "Element":"Platinum",
@@ -1250,7 +1254,7 @@ periodicTable.element.push({
     "C":"0.133",
     "X":"2.28"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":79,
     "Symbol":"Au",
     "Element":"Gold",
@@ -1266,7 +1270,7 @@ periodicTable.element.push({
     "C":"0.129",
     "X":"2.54"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":80,
     "Symbol":"Hg",
     "Element":"Mercury",
@@ -1282,7 +1286,7 @@ periodicTable.element.push({
     "C":"0.14",
     "X":"2"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":81,
     "Symbol":"Tl",
     "Element":"Thallium",
@@ -1298,7 +1302,7 @@ periodicTable.element.push({
     "C":"0.129",
     "X":"1.62"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":82,
     "Symbol":"Pb",
     "Element":"Lead",
@@ -1314,7 +1318,7 @@ periodicTable.element.push({
     "C":"0.129",
     "X":"1.87"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":83,
     "Symbol":"Bi",
     "Element":"Bismuth",
@@ -1330,7 +1334,7 @@ periodicTable.element.push({
     "C":"0.122",
     "X":"2.02"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":84,
     "Symbol":"Po",
     "Element":"Polonium",
@@ -1346,7 +1350,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"2.0"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":85,
     "Symbol":"At",
     "Element":"Astatine",
@@ -1362,7 +1366,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"2.2"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":86,
     "Symbol":"Rn",
     "Element":"Radon",
@@ -1378,7 +1382,7 @@ periodicTable.element.push({
     "C":"0.094",
     "X":"2.2"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":87,
     "Symbol":"Fr",
     "Element":"Francium",
@@ -1394,7 +1398,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"0.7"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":88,
     "Symbol":"Ra",
     "Element":"Radium",
@@ -1410,7 +1414,7 @@ periodicTable.element.push({
     "C":"0.094",
     "X":"0.9"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":89,
     "Symbol":"Ac",
     "Element":"Actinium",
@@ -1426,12 +1430,12 @@ periodicTable.element.push({
     "C":"0.12",
     "X":"1.1"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":90,
     "Symbol":"Th",
     "Element":"Thorium",
     "Origin of name":"Thor, the Scandinavian god of thunder",
-    "Group":4,
+    "Group":"",
     "Period":7,
     "Atomic weight":"232.03774",
     "Mass number":232,
@@ -1442,12 +1446,12 @@ periodicTable.element.push({
     "C":"0.113",
     "X":"1.3"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":91,
     "Symbol":"Pa",
     "Element":"Protactinium",
     "Origin of name":"the Greek protos, 'first', and actinium, which is produced through the radioactive decay of protactinium",
-    "Group":3,
+    "Group":"",
     "Period":7,
     "Atomic weight":"231.035882",
     "Mass number":231,
@@ -1458,12 +1462,12 @@ periodicTable.element.push({
     "C":"–",
     "X":"1.5"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":92,
     "Symbol":"U",
     "Element":"Uranium",
     "Origin of name":"Uranus, the seventh planet in the Solar System",
-    "Group":3,
+    "Group":"",
     "Period":7,
     "Atomic weight":"238.028913",
     "Mass number":238,
@@ -1474,12 +1478,12 @@ periodicTable.element.push({
     "C":"0.116",
     "X":"1.38"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":93,
     "Symbol":"Np",
     "Element":"Neptunium",
     "Origin of name":"Neptune, the eighth planet in the Solar System",
-    "Group":4,
+    "Group":"",
     "Period":7,
     "Atomic weight":"237",
     "Mass number":237,
@@ -1490,12 +1494,12 @@ periodicTable.element.push({
     "C":"–",
     "X":"1.36"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":94,
     "Symbol":"Pu",
     "Element":"Plutonium",
     "Origin of name":"Pluto, a dwarf planet in the Solar System (then considered the ninth planet)",
-    "Group":5,
+    "Group":"",
     "Period":7,
     "Atomic weight":"244",
     "Mass number":244,
@@ -1506,12 +1510,12 @@ periodicTable.element.push({
     "C":"–",
     "X":"1.28"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":95,
     "Symbol":"Am",
     "Element":"Americium",
     "Origin of name":"The Americas, as the element was first synthesized on the continent, by analogy with europium",
-    "Group":3,
+    "Group":"",
     "Period":7,
     "Atomic weight":"243",
     "Mass number":243,
@@ -1522,12 +1526,12 @@ periodicTable.element.push({
     "C":"–",
     "X":"1.13"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":96,
     "Symbol":"Cm",
     "Element":"Curium",
     "Origin of name":"Pierre Curie, a physicist, and Marie Curie, a physicist and chemist, named after great scientists by analogy with gadolinium",
-    "Group":4,
+    "Group":"",
     "Period":7,
     "Atomic weight":"247",
     "Mass number":247,
@@ -1538,12 +1542,12 @@ periodicTable.element.push({
     "C":"–",
     "X":"1.28"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":97,
     "Symbol":"Bk",
     "Element":"Berkelium",
     "Origin of name":"Berkeley, California, where the element was first synthesized, by analogy with terbium",
-    "Group":4,
+    "Group":"",
     "Period":7,
     "Atomic weight":"247",
     "Mass number":247,
@@ -1554,12 +1558,12 @@ periodicTable.element.push({
     "C":"–",
     "X":"1.3"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":98,
     "Symbol":"Cf",
     "Element":"Californium",
     "Origin of name":"California, where the element was first synthesized",
-    "Group":4,
+    "Group":"",
     "Period":7,
     "Atomic weight":"251",
     "Mass number":251,
@@ -1570,12 +1574,12 @@ periodicTable.element.push({
     "C":"–",
     "X":"1.3"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":99,
     "Symbol":"Es",
     "Element":"Einsteinium",
     "Origin of name":"Albert Einstein, physicist",
-    "Group":4,
+    "Group":"",
     "Period":7,
     "Atomic weight":"252",
     "Mass number":252,
@@ -1586,12 +1590,12 @@ periodicTable.element.push({
     "C":"–",
     "X":"1.3"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":100,
     "Symbol":"Fm",
     "Element":"Fermium",
     "Origin of name":"Enrico Fermi, physicist",
-    "Group": 4,
+    "Group":"",
     "Period":7,
     "Atomic weight":"257",
     "Mass number":257,
@@ -1602,12 +1606,12 @@ periodicTable.element.push({
     "C":"–",
     "X":"1.3"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":101,
     "Symbol":"Md",
     "Element":"Mendelevium",
     "Origin of name":"Dmitri Mendeleev, chemist and inventor",
-    "Group": 4,
+    "Group":"",
     "Period":7,
     "Atomic weight":"258",
     "Mass number":258,
@@ -1618,12 +1622,12 @@ periodicTable.element.push({
     "C":"–",
     "X":"1.3"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":102,
     "Symbol":"No",
     "Element":"Nobelium",
     "Origin of name":"Alfred Nobel, chemist, engineer, innovator, and armaments manufacturer",
-    "Group": 4,
+    "Group":"",
     "Period":7,
     "Atomic weight":"259",
     "Mass number":259,
@@ -1634,12 +1638,12 @@ periodicTable.element.push({
     "C":"–",
     "X":"1.3"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":103,
     "Symbol":"Lr",
     "Element":"Lawrencium",
     "Origin of name":"Ernest O. Lawrence, physicist",
-    "Group":  4,
+    "Group":"",
     "Period":7,
     "Atomic weight":"266",
     "Mass number":266,
@@ -1650,7 +1654,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"1.3"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":104,
     "Symbol":"Rf",
     "Element":"Rutherfordium",
@@ -1666,7 +1670,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":105,
     "Symbol":"Db",
     "Element":"Dubnium",
@@ -1682,7 +1686,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":106,
     "Symbol":"Sg",
     "Element":"Seaborgium",
@@ -1698,7 +1702,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":107,
     "Symbol":"Bh",
     "Element":"Bohrium",
@@ -1714,7 +1718,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":108,
     "Symbol":"Hs",
     "Element":"Hassium",
@@ -1730,7 +1734,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":109,
     "Symbol":"Mt",
     "Element":"Meitnerium",
@@ -1746,7 +1750,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":110,
     "Symbol":"Ds",
     "Element":"Darmstadtium",
@@ -1762,7 +1766,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":111,
     "Symbol":"Rg",
     "Element":"Roentgenium",
@@ -1778,7 +1782,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":112,
     "Symbol":"Cn",
     "Element":"Copernicium",
@@ -1794,7 +1798,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":113,
     "Symbol":"Nh",
     "Element":"Nihonium",
@@ -1810,7 +1814,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":114,
     "Symbol":"Fl",
     "Element":"Flerovium",
@@ -1826,7 +1830,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":115,
     "Symbol":"Mc",
     "Element":"Moscovium",
@@ -1842,7 +1846,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":116,
     "Symbol":"Lv",
     "Element":"Livermorium",
@@ -1858,7 +1862,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":117,
     "Symbol":"Ts",
     "Element":"Tennessine",
@@ -1874,7 +1878,7 @@ periodicTable.element.push({
     "C":"–",
     "X":"–"
     });
-    periodicTable.element.push({
+    periodicTable.push({
     "Z":118,
     "Symbol":"Og",
     "Element":"Oganesson",
@@ -1890,29 +1894,29 @@ periodicTable.element.push({
     "C":"–",
     "X":"–"
     });
-
-
-
+    
+    
+    
 
 periodicTable.searchByAtomicNumber = function(x){
-    var ii = periodicTable.element.length;
+    var ii = periodicTable.length;
     for (var i = 0; i < ii; i++) {
-        if(periodicTable.element[i]["Z"]==x)
-            return periodicTable.element[i];
+        if(periodicTable[i]["Z"]==x)
+            return periodicTable[i];
     }
 }
 periodicTable.searchByMassNumber = function(x){
-    var ii = periodicTable.element.length;
+    var ii = periodicTable.length;
     for (var i = 0; i < ii; i++) {
-        if(periodicTable.element[i]["Mass number"]==x)
-            return periodicTable.element[i];
+        if(periodicTable[i]["Mass number"]==x)
+            return periodicTable[i];
     }
 }
 periodicTable.searchBySymbol = function(x){
-    var ii = periodicTable.element.length;
+    var ii = periodicTable.length;
     for (var i = 0; i < ii; i++) {
-        if(periodicTable.element[i]["Symbol"].toLocaleLowerCase()==x.toLocaleLowerCase())
-            return periodicTable.element[i];
+        if(periodicTable[i]["Symbol"].toLocaleLowerCase()==x.toLocaleLowerCase())
+            return periodicTable[i];
     }
 }
 
@@ -1922,8 +1926,5 @@ periodicTable.randomElement = function(limit){
     var x = Math.random()*1000;
     x = parseInt(x);
     x%=limit;
-    return periodicTable.element[x];
+    return periodicTable[x];
 }
-
-export const askualabs_periodicTable = periodicTable;
-//export askual_periodicTable = periodicTable;

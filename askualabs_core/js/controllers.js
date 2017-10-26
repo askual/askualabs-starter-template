@@ -5,26 +5,26 @@ if(!controller){
 }
 controller.preload = function(){
     // RADIOBUTTON
-    game.load.image('radioButtonUnchecked', 'assets/img/controller/buttonUnchecked.png');
-    game.load.image('radioButtonChecked', 'assets/img/controller/buttonChecked.png');
+    game.load.image('radioButtonUnchecked', 'askualabs_core/image/controller/buttonUnchecked.png');
+    game.load.image('radioButtonChecked', 'askualabs_core/image/controller/buttonChecked.png');
 
     // CHECKBOX
-    game.load.image('checkboxChecked', 'assets/img/controller/CheckBoxChecked.png');
-    game.load.image('checkboxUnchecked', 'assets/img/controller/CheckBoxUnchecked.png');
+    game.load.image('checkboxChecked', 'askualabs_core/image/controller/CheckBoxChecked.png');
+    game.load.image('checkboxUnchecked', 'askualabs_core/image/controller/CheckBoxUnchecked.png');
 
     // NUMBER AREA
-    game.load.image('buttonUp', 'assets/img/controller/buttonUp.png');
-    game.load.image('buttonDown', 'assets/img/controller/buttonDown.png');
+    game.load.image('buttonUp', 'askualabs_core/image/controller/buttonUp.png');
+    game.load.image('buttonDown', 'askualabs_core/image/controller/buttonDown.png');
 
     //BUTTON
-    game.load.image('button', 'assets/img/controller/button.png');
+    game.load.image('button', 'askualabs_core/image/controller/button.png');
 
     //SWITCH
-    game.load.image('askua_on','assets/img/controller/onSwitch.png');
-    game.load.image('askua_off','assets/img/controller/offSwitch.png');
+    game.load.image('askua_on','askualabs_core/image/controller/onSwitch.png');
+    game.load.image('askua_off','askualabs_core/image/controller/offSwitch.png');
     //SLIDER
-    game.load.image('row','assets/img/controller/sliderRow.png');
-    game.load.image('col','assets/img/controller/sliderCol.png');
+    game.load.image('row','askualabs_core/image/controller/sliderRow.png');
+    game.load.image('col','askualabs_core/image/controller/sliderCol.png');
 }
 
 
@@ -497,3 +497,5 @@ controller.slider = function(x,y,dval){
     }
     self.create();
 }
+
+export const askualabs_controller = controller;
