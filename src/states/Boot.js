@@ -39,25 +39,9 @@ export default class extends Phaser.State {
     this.game.load.image('pluss', './assets/images/pluss.png')
     this.game.load.image('equalto', './assets/images/equalto.png')
     this.game.load.image('p3', './assets/images/place3.png')
-    /*
-    let text = this.add.text(this.world.centerX, this.world.centerY, 'loading fonts', { font: '16px Arial', fill: '#dddddd', align: 'center' })
-    text.anchor.setTo(0.5, 0.5)
 
-    this.load.image('loaderBg', './assets/images/loader-bg.png')
-    this.load.image('loaderBar', './assets/images/loader-bar.png')
-
-    //let me =new askual_periodicTable();
-    //console.log(me);
-    let element = askual_periodicTable.searchByAtomicNumber(6);
-    console.log(element);
-    */
-    /*for (var i = 0; i < 118; i++) {
-      eval("this.game.load.image('"+elements[i].symbol+"', './assets/elements/"+elements[i].symbol+".png')")
-    }
-    */
   }
   create () {
-    //this.game.add.sprite(0, 130, 'loaderBar');
     askualabs_brand.create();
     this.preloadBar.cropEnabled = false;
     this.preloadBar.destroy();
@@ -73,7 +57,6 @@ export default class extends Phaser.State {
             return bmd;
     };
 
-    //game.add.sprite(300,300,'challMenu');
     var style = { font: "32px Arial", fill: "#233740" },
         styleDev = { font: "12px Arial", fill: "#fff" };
     this.hvrMenu = game.add.sprite(game.world.centerX-425,145,'menuHover');

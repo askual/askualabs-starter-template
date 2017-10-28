@@ -1,13 +1,12 @@
 {
     "name": "PhaserES6Webpack",
-    "version": "1.1.0",
+    "version": "0.0.1",
     "description": "",
-    "author": "leandro cabrera <leandcabrera@gmail.com>",
-    "main": "index.js",
+    "author": "askual",
+    "main": "app.js",
     "scripts": {
         "dev": "webpack",
         "deploy": "webpack --config webpack.production.config.js",
-        "cordova": "webpack --config webpack.cordova.config.js",
         "test": "eslint ./src/**/**.js"
     },
     "license": "MIT",
@@ -33,17 +32,8 @@
         "webpack": "^3.4.1"
     },
     "dependencies": {
+        "express": "^4.16.2",
         "phaser-ce": "^2.8.3",
         "webfontloader": "^1.6.28"
-    },
-    "cordova": {
-        "platforms": [
-            "android",
-            "browser",
-            "ios"
-        ],
-        "plugins": {
-            "cordova-plugin-whitelist": {}
-        }
     }
 }
